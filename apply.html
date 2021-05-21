@@ -53,6 +53,17 @@
                 <h1>Fizzbuzz Application</h1>
             </div>
         </div>
+        <div class="row">
+            <div class="col">
+                <h3>Traditionally this application is applied to numbers in the range of 1-100 but feel
+                    free to choose any starting and ending number to determine your own table.</h3>
+                <p>Next choose one number and it's multiples to be replaced by the word <b>"Fizz"</b> and another to be
+                    replaced by <b>"Buzz"</b>.</p>
+                <p> <b>"FizzBuzz"</b>will automatically replace the numbers which are multiples of both the first and
+                    second values you
+                    choose to <b>"Fizz"</b> and <b>"Buzz"</b>.</p>
+            </div>
+        </div>
         <form class="form-align">
             <div class="row">
                 <div class="col-auto">
@@ -98,41 +109,42 @@
 
             </tbody>
         </table>
+    </main>
 
 
-        <footer class="footer bg-dark">
-            <div class="container">
-                <span class="text-muted">Brock EsquedaⒸ 2021</span>
-            </div>
-        </footer>
+    <footer class="footer bg-dark text-center">
+        <div class="container">
+            <span class="text-muted">Brock EsquedaⒸ 2021</span>
+        </div>
+    </footer>
 
-        <template id="dataTemplate">
-            <tr class="result">
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </template>
+    <template id="dataTemplate">
+        <tr class="result">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </template>
 
 
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-        </script>
-        <script src="/js/fizzbuzz.js"></script>
-        <script>
-            document.getElementById("fizzbuzz").addEventListener("click", carbonate);
-        </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="/js/fizzbuzz.js"></script>
+    <script>
+        document.getElementById("fizzbuzz").addEventListener("click", carbonate);
+    </script>
 </body>
 
 </html>

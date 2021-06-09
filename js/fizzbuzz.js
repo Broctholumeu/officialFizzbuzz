@@ -6,7 +6,12 @@ function carbonate() {
     let fizzing = parseInt(document.getElementById("fizzNum").value);
     let buzFiz = buzzing * fizzing;
     let numbers = rangeValues(begin, final);
-    outputBuzz(numbers, buzzing, fizzing, buzFiz);
+
+    if(Number.isInteger(begin) && Number.isInteger(final) && Number.isInteger(buzzing) && Number.isInteger(fizzing) == true) {
+        outputBuzz(numbers, buzzing, fizzing, buzFiz);
+    } else {
+        swal("Woah there,", "Please check all values entered are Integers.", "error");
+    }
 }
 
 // Finds range of numbers
@@ -20,10 +25,12 @@ function rangeValues(begin, final) {
 
 // Import values to preformated table and identify params
 function outputBuzz(numbers, buzzing, fizzing, buzFiz) {
+    
     // Grap template
     const rowTemplate = document.getElementById("dataTemplate");
-    // Put table where placed in index.html
+    // Put table where placed in apply.html
     const resultsBody = document.getElementById("resultsBody");
+
     let colCount = rowTemplate.content.cloneNode(true).querySelectorAll("td").length;
     resultsBody.innerHTML = "";
 

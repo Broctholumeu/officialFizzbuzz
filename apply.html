@@ -59,9 +59,12 @@
                     free to choose any starting and ending number to determine your own table.</h3>
                 <p>Next choose one number and it's multiples to be replaced by the word <b>"Fizz"</b> and another to be
                     replaced by <b>"Buzz"</b>.</p>
-                <p> <b>"FizzBuzz"</b>will automatically replace the numbers which are multiples of both the first and
+                <p>
+                    <div class="FizzBuzz d-inline">"FizzBuzz"</div>will automatically replace the numbers which are
+                    multiples of both the first and
                     second values you
-                    choose to <b>"Fizz"</b> and <b>"Buzz"</b>.</p>
+                    choose to <div class="Fizz d-inline">"Fizz"</div> and <div class="Buzz d-inline">"Buzz"</div>.
+                </p>
             </div>
         </div>
         <form class="form-align">
@@ -75,19 +78,21 @@
                     <input type="number" id="end" value=100>
                 </div>
             </div>
-            <div class="row">
+            <hr>
+            <div class="row p-1">
                 <div class="col-auto">
-                    <label>Choose A "Buzz" Number</label>
-                    <input type="number" id="buzzNum" value=3>
-                </div>
-                <div class="col-auto">
-                    <label>Choose A "Fizz" Number</label>
+                    <label>Choose A Number To <div class="Fizz d-inline">"Fizz"</div></label>
                     <input type="number" id="fizzNum" value=5>
                 </div>
+                <div class="col-auto">
+                    <label>Choose A Number to <div class="Buzz d-inline">Buzz"</div></label>
+                    <input type="number" id="buzzNum" value=3>
+                </div>
+                
             </div>
             <div class="row">
                 <div class="col offset-5">
-                    <button type="button" class="btn btn-outline-danger" id="fizzbuzz">Fizz The Buzz</button>
+                    <button type="button" class="btn btn-danger" id="fizzbuzz">Fizz The Buzz</button>
                 </div>
             </div>
         </form>
@@ -145,6 +150,7 @@
     <script>
         document.getElementById("fizzbuzz").addEventListener("click", carbonate);
     </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>

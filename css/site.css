@@ -6,9 +6,9 @@ html {
 }
 
 body {
-    background: linear-gradient(-63deg, #6cbce4, #818032);
+    background: linear-gradient(-63deg, #076492, #8b660f);
     background-size: 400% 400%;
-    animation: gradient 150s ease infinite;
+    animation: gradient 8s ease infinite;
 }
 
 @keyframes gradient {
@@ -28,7 +28,7 @@ body {
 .Fizz {
     content: "Fizz";
     font-weight: bolder;
-    color: rgb(245, 10, 10);
+    color: rgb(119, 3, 3);
     font-size: large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -59,23 +59,25 @@ body {
 }
 
 
-/* Custom page CSS
-  -------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
-body>.container {
-    padding: 60px 15px 0;
-}
-
-.footer>.container {
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-code {
-    font-size: 80%;
-}
-
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #f5f5f5;
+  }
 /* Custom page CSS
   -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
@@ -161,3 +163,22 @@ code {
 .section.bg-alt {
     background: #b4bac0;
 }
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #f5f5f5;
+  }
